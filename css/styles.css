@@ -489,6 +489,29 @@ body{
     height: 24;
 }
 
+.footer-subscribe-div{
+    display: flex;
+}
+
+.footer-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+
+    color: var(--brand-color-6-white);
+    background-color: var(--brand-color-3-iris);
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-btn-svg{
+    width: 24px;
+    height: 20px;
+}
+
 .section-portfolio{
     padding: 96px 0 120px;
 }
@@ -649,12 +672,13 @@ img{
 
 }
 
+/*
 .is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
-
+*/
 
 .modal{
     position: absolute;
@@ -696,4 +720,24 @@ img{
 .modal-icon{
     fill: var(--brand-color-1-navy-blue);
 }
+
+input,
+textarea{
+  display: block;
+}
+
+.modal-text{
+    font-size: 16px;
+    margin-bottom: 34px;
+    
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-1-navy-blue);
+}
+
+.modal-input{
+    display: flex;
+}
+
 
