@@ -721,14 +721,15 @@ img{
     fill: var(--brand-color-1-navy-blue);
 }
 
-input,
-textarea{
+input{
   display: block;
 }
 
 .modal-text{
     font-size: 16px;
+    margin-top: 48px;
     margin-bottom: 34px;
+    padding: 0;
     
 
     text-align: center;
@@ -736,8 +737,70 @@ textarea{
     color: var(--brand-color-1-navy-blue);
 }
 
-.modal-input{
+.modal-input-div{
     display: flex;
+    position: relative;
+    
+    margin-bottom: 8px;
 }
+
+.modal-label{
+    
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    color: var(--brand-color-8-light-slate)
+}
+
+.modal-input{
+    width: 360px;
+    height: 40px;
+    padding:0 38px;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+
+    transition: var(--animation);
+}
+
+.modal-input:focus{
+    outline-color: var(--brand-color-3-iris);
+}
+
+.modal-icon-form{
+    position: absolute;
+    top: 50%;
+    left: 19px;
+
+    transform: translateY(-50%);
+    fill: var(--brand-color-1-navy-blue);
+    transition: fill var(--animation);
+    pointer-events: none;
+}
+
+.modal-input:focus + .modal-icon-form {
+    fill: var(--brand-color-3-iris);
+}
+
+.modal-textarea{
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    resize: none;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    resize: none;
+}
+
+.modal-textarea::placeholder{
+    font-size: 12px;
+    padding: 8px 16px;
+}
+
 
 
