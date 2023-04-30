@@ -439,10 +439,17 @@ body{
     background-color: var(--brand-color-1-navy-blue);
 }
 
+.footer-div-one{
+    margin-right: 120px;
+}
+
+.footer-div-three{
+    margin-left: auto;
+}
+
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
 }
 
 .footer-logo {
@@ -464,7 +471,7 @@ body{
 .footer-media-text{
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 
     letter-spacing: 0.02em;
     color: var(--brand-color-6-white);
@@ -473,11 +480,12 @@ body{
 
 .footer-form{
     margin-right: 24px;
-    
+    display: flex;
 }
 
 .footer-input{
     padding: 8px 16px;
+    margin-right: 24px;
     width: 264px;
     height: 40px;
     background: var(--brand-color-1-navy-blue);
@@ -515,13 +523,9 @@ body{
     height: 24;
 }
 
-.footer-subscribe-div{
-    display: flex;
-}
-
 .footer-btn{
     display: flex;
-    flex-direction: row;
+   
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
@@ -724,8 +728,7 @@ img{
     opacity: 1;
 
     min-width: 408px;
-    min-height: 584px;
-    padding: 24px;
+    padding: 72px 24px 24px;
 
     background: var(--brand-color-11-dairy);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -738,6 +741,7 @@ img{
     position: absolute;
     top: 24px;
     right: 24px;
+    padding: 0;
 
     width: 24px;
     height: 24px;
@@ -751,10 +755,23 @@ img{
     border-radius: 50%;
 
     cursor: pointer;
+
+    transition: background-color var(--animation);
 }
 
-.modal-icon{
+.modal-btn:hover,
+.modal-btn:focus{
+    background-color: var(--brand-color-4-ocean);
+}
+
+.modal-icon {
     fill: var(--brand-color-1-navy-blue);
+    transition: fill var(--animation);
+}
+
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon{
+    fill: var(--brand-color-6-white);
 }
 
 input{
@@ -763,11 +780,9 @@ input{
 
 .modal-text{
     font-size: 16px;
-    margin-top: 48px;
-    margin-bottom: 34px;
-    padding: 0;
-    
+    margin-bottom: 16px;
 
+    font-weight: 500;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--brand-color-1-navy-blue);
@@ -781,7 +796,7 @@ input{
 }
 
 .modal-label{
-    
+    display: block;
     margin-bottom: 4px;
 
     font-size: 12px;
@@ -816,7 +831,7 @@ input{
     pointer-events: none;
 }
 
-.modal-input:focus + .modal-icon-form {
+.modal-input:focus + .modal-icon-form{
     fill: var(--brand-color-3-iris);
 }
 
@@ -850,7 +865,6 @@ input{
 .modal-btn-send{
     display: block;
     margin: 0 auto;
-    align-items: center;
     width: 169px;
     height: 56px;
 
@@ -902,4 +916,8 @@ input{
     
     border: 1px solid var(--brand-color-4-ocean);
     border-radius: 2px;
+}
+
+.modal-link{
+    color: var(--brand-color-3-iris);
 }
