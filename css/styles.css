@@ -526,6 +526,7 @@ body{
 .footer-btn{
     display: flex;
    
+    margin-bottom: 0;
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
